@@ -43,7 +43,7 @@ export class Counter extends Component {
 export default Counter;
 
 /**
- * 1. Never modify the state directly . The only place where we can assing this.setState is the constructor, any other time to change the state, setState() method has to be used.
+ * 1. Never modify the state directly . The only place where we can assign this.setState is the constructor, any other time to change the state, setState() method has to be used.
  * eg.  increment() {
  * 	this.state.count = this.state.count + 1
  * 	console.log(this.state.count)

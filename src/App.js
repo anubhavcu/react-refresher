@@ -8,7 +8,9 @@ import Greet from './components/Greet';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import ParentComponent from './components/ParentComponent';
+import FunctionEvent from './components/FunctionEvent';
 import Welcome from './components/Welcome';
+import UserGreeting from './components/UserGreeting';
 const App = () => {
   return (
     <div className='App'>
@@ -27,7 +29,9 @@ const App = () => {
       {/* <ClassClick /> */}
 
       {/* <EventBind /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      {/* <FunctionEvent /> */}
+      <UserGreeting />
     </div>
   );
 };
