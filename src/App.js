@@ -11,6 +11,7 @@ import ParentComponent from './components/ParentComponent';
 import FunctionEvent from './components/FunctionEvent';
 import Welcome from './components/Welcome';
 import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
 const App = () => {
   return (
     <div className='App'>
@@ -31,7 +32,8 @@ const App = () => {
       {/* <EventBind /> */}
       {/* <ParentComponent /> */}
       {/* <FunctionEvent /> */}
-      <UserGreeting />
+      {/* <UserGreeting /> */}
+      <NameList />
     </div>
   );
 };
