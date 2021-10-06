@@ -1,3 +1,5 @@
+// eg for adding event handler in function component
+// also see EventBind.jsx and Counter.jsx
 const FunctionClick = () => {
   function handleClick() {
     console.log('button clicked');

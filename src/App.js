@@ -7,6 +7,7 @@ import FunctionClick from './components/FunctionClick';
 import Greet from './components/Greet';
 import Hello from './components/Hello';
 import Message from './components/Message';
+import ParentComponent from './components/ParentComponent';
 import Welcome from './components/Welcome';
 const App = () => {
   return (
@@ -25,7 +26,8 @@ const App = () => {
       {/* <FunctionClick /> */}
       {/* <ClassClick /> */}
 
-      <EventBind />
+      {/* <EventBind /> */}
+      <ParentComponent />
     </div>
   );
 };

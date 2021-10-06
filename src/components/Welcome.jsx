@@ -2,6 +2,8 @@
 import React from 'react';
 class Welcome extends React.Component {
   render() {
+    // we can also destructure the props here
+    //   const {name , children} = props
     return (
       <div>
         <h2>Welcome {this.props.name}- class Component</h2>

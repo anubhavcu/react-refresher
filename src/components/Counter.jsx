@@ -1,3 +1,4 @@
+// eg for Do's and don'ts while using setState - also see eventBind.jsx
 import React, { Component } from 'react';
 
 export class Counter extends Component {

@@ -1,3 +1,5 @@
+// eg for adding event handler in class component
+// also see EventBind.jsx and Counter.jsx
 import React, { Component } from 'react';
 
 class ClassClick extends Component {

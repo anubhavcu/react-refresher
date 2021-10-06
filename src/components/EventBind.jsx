@@ -1,3 +1,4 @@
+// eg for binding the eventHandler, ways to define eventHandler method
 import React, { Component } from 'react';
 
 class EventBind extends Component {
