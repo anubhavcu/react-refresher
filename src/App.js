@@ -12,6 +12,7 @@ import FunctionEvent from './components/FunctionEvent';
 import Welcome from './components/Welcome';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import Form from './components/Form';
 const App = () => {
   return (
     <div className='App'>
@@ -33,7 +34,8 @@ const App = () => {
       {/* <ParentComponent /> */}
       {/* <FunctionEvent /> */}
       {/* <UserGreeting /> */}
-      <NameList />
+      {/* <NameList /> */}
+      <Form />
     </div>
   );
 };
