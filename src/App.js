@@ -34,8 +34,8 @@ const App = () => {
       {/* <ParentComponent /> */}
       {/* <FunctionEvent /> */}
       {/* <UserGreeting /> */}
-      {/* <NameList /> */}
-      <Form />
+      <NameList />
+      {/* <Form /> */}
     </div>
   );
 };
