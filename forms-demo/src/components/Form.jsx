@@ -6,6 +6,7 @@ const initialState = {
   userName: '',
   comments: '',
   topic: 'react',
+  radioValue: '3',
 };
 class Form extends Component {
   constructor(props) {
@@ -47,11 +48,18 @@ class Form extends Component {
     this.setState({ ...initialState });
   };
 
+  handleRadioValueChange = (e) => {
+    this.setState({
+      radioValue: e.target.value,
+    });
+  };
+
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state.userName);
     console.log(this.state.comments);
     console.log(this.state.topic);
+    console.log(this.state.radioValue);
   };
 
   render() {
@@ -82,6 +90,7 @@ class Form extends Component {
             {this.state.comments.trim() ? this.state.comments : 'no comments'}
           </div>
         </div>
+        <hr />
         <div>
           <label htmlFor=''>Topics</label>
           <select
@@ -98,6 +107,48 @@ class Form extends Component {
         </div>
         <div>
           <button onClick={this.handleResetState}>Reset all state</button>
+        </div>
+
+        <hr />
+        <div>
+          <div>
+            <div>
+              <label htmlFor=''>Duration : </label>
+            </div>
+
+            <input
+              type='radio'
+              name=''
+              id=''
+              value='3'
+              checked={this.state.radioValue === '3'}
+              onChange={this.handleRadioValueChange}
+            />
+            <label htmlFor=''>3</label>
+          </div>
+          <div>
+            <input
+              type='radio'
+              name=''
+              id=''
+              value='6'
+              checked={this.state.radioValue === '6'}
+              onChange={this.handleRadioValueChange}
+            />
+            <label htmlFor=''>6</label>
+          </div>
+          <div>
+            <input
+              type='radio'
+              name=''
+              id=''
+              value='12'
+              checked={this.state.radioValue === '12'}
+              onChange={this.handleRadioValueChange}
+            />
+            <label htmlFor=''>12</label>
+          </div>
+          <span>radio value : {this.state.radioValue}</span>
         </div>
 
         <button>Submit</button>
