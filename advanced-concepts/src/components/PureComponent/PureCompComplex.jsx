@@ -10,6 +10,7 @@ class PureCompComplex extends PureComponent {
 
   componentDidMount() {
     const oldChars = this.state.chars;
+    // because the state here is of complex type, reference of both the new and old state should be same
     setInterval(() => {
       this.setState(
         {

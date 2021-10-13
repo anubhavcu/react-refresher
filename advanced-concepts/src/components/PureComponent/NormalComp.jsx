@@ -15,12 +15,12 @@ class NormalComp extends Component {
     };
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    // console.log(this.props);
-    // console.log(nextProps);
-    // console.log(this.shallowEqual(this.props, nextProps));
-    return !this.shallowEqual(this.props, nextProps);
-  }
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   // console.log(this.props);
+  //   // console.log(nextProps);
+  //   // console.log(this.shallowEqual(this.props, nextProps));
+  //   return !this.shallowEqual(this.props, nextProps);
+  // }
 
   // shallow comparison implementation for simple objects
   // see deep comparison for nested objects (we need to recursively check if any nested objects are there or not) here - https://dmitripavlutin.com/how-to-compare-objects-in-javascript/
