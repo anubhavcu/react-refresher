@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import FocusInput from './components/ClassRef/FocusInput';
 import ParentComp from './components/PureComponent/ParentComp';
+import FRParentInput from './components/RefForwarding/FRParentInput';
 import RefsDemo from './components/Refs/RefsDemo';
 
 class App extends Component {
@@ -10,7 +11,8 @@ class App extends Component {
       <div className='App'>
         {/* <ParentComp /> */}
         {/* <RefsDemo /> */}
-        <FocusInput />
+        {/* <FocusInput /> */}
+        <FRParentInput />
       </div>
     );
   }
