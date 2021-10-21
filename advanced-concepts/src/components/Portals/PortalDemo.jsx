@@ -1,7 +1,6 @@
 // basic eg to show how to create a portal
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 const PortalDemo = () => {
   return ReactDOM.createPortal(
     <div>
@@ -10,6 +9,19 @@ const PortalDemo = () => {
     document.getElementById('portal-root')
   );
 };
+
+// we can also create portal using class
+// import { Component } from 'react';
+// export class PortalDemo extends Component {
+//   render() {
+//     return ReactDOM.createPortal(
+//       <div>
+//         <h1>Portal from class </h1>
+//       </div>,
+//       document.getElementById('portal-root')
+//     );
+//   }
+// }
 
 export default PortalDemo;
 
