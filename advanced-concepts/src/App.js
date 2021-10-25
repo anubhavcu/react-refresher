@@ -10,6 +10,9 @@ import FRParentInput from './components/RefForwarding/FRParentInput';
 import RefsDemo from './components/Refs/RefsDemo';
 import Hero from './components/ErrorBoundary/Hero';
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
+import ClickCounter from './components/HOC/ClickCounter';
+import HoverCounter from './components/HOC/HoverCounter';
+import ClickCounter5 from './components/HOC/ClickCounter5';
 
 class App extends Component {
   render() {
@@ -28,7 +31,7 @@ class App extends Component {
 
         {/** error boundary  */}
         {/** placement of error boundary also matters as it controls if the entire app should have a fallback UI or just the component causing the problem , here we have wrapped each component to ErrorBoundary so if any components has error will have a fallback UI and rest will work fine*/}
-        <ErrorBoundary>
+        {/* <ErrorBoundary>
           <Hero hero='Batman' />
         </ErrorBoundary>
         <ErrorBoundary>
@@ -36,7 +39,12 @@ class App extends Component {
         </ErrorBoundary>
         <ErrorBoundary>
           <Hero hero='Joker' />
-        </ErrorBoundary>
+        </ErrorBoundary> */}
+
+        {/**HOC */}
+        <ClickCounter name='Anubhav' />
+        <HoverCounter />
+        <ClickCounter5 />
       </div>
     );
   }
