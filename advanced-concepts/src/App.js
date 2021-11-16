@@ -17,20 +17,30 @@ import ClickCounterTwo from './components/renderPropsPattern/ClickCounterTwo';
 import HoverCounterTwo from './components/renderPropsPattern/HoverCounterTwo';
 import User from './components/renderPropsPattern/User';
 import Counter from './components/renderPropsPattern/Counter';
+import RootComponent from './components/Context/RootComponent';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
         <h1>root div</h1>
+        {/* ***************************************** */}
+        {/* Pure component */}
         {/* <ParentComp /> */}
+
+        {/* ****************************************** */}
+        {/* Refs | ClassRef | Ref forwarding */}
         {/* <RefsDemo /> */}
         {/* <FocusInput /> */}
         {/* <FRParentInput /> */}
+
+        {/* **************************************************** */}
         {/* portals  */}
         {/* <PortalDemo /> */}
         {/* <ModalDemo />   */}
         {/* <Parent />    */}
+
+        {/* ****************************************************************************** */}
         {/** error boundary  */}
         {/** placement of error boundary also matters as it controls if the entire app should have a fallback UI or just the component causing the problem , here we have wrapped each component to ErrorBoundary so if any components has error will have a fallback UI and rest will work fine*/}
         {/* <ErrorBoundary>
@@ -42,6 +52,8 @@ class App extends Component {
         <ErrorBoundary>
           <Hero hero='Joker' />
         </ErrorBoundary> */}
+
+        {/* ************************************************************************* */}
         {/**HOC */}
         {/* <ClickCounter name='Anubhav' />
         <HoverCounter />
@@ -49,7 +61,7 @@ class App extends Component {
         {/* renderProps */}
         {/* <ClickCounterTwo /> */}
         {/* <HoverCounterTwo /> */}
-        <User name={(isLogged) => (isLogged ? 'Anubhav' : 'Guest')} />
+        {/* <User name={(isLogged) => (isLogged ? 'Anubhav' : 'Guest')} />
         <Counter
           render={(count, handleIncrement) => (
             <ClickCounterTwo count={count} handleIncrement={handleIncrement} />
@@ -59,7 +71,7 @@ class App extends Component {
           render={(count, handleIncrement) => (
             <HoverCounterTwo count={count} handleIncrement={handleIncrement} />
           )}
-        />
+        /> */}
 
         {/* alternative way to pass it as a children (anything b/w opening and closing tags are children), so modify in Counter.jsx to use this.props.children instead of this.props.render if using below method */}
         {/* <Counter>
@@ -67,6 +79,10 @@ class App extends Component {
             <HoverCounterTwo count={count} handleIncrement={handleIncrement} />
           )}
         </Counter> */}
+
+        {/* **************************************************************** */}
+        {/* Context  */}
+        <RootComponent />
       </div>
     );
   }
